@@ -1,0 +1,153 @@
+@import 'mq.scss';
+@import 'variables.scss';
+
+.page-5 {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .grid-container {
+        grid-row-gap: 10.93vw;
+        grid-column-gap: 6vw;
+
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 40vw 40vw;
+        
+        margin-bottom: 0;
+    }
+
+    .item-wrapper {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+    }
+
+    .item-background {
+        width: 40vw;
+        height: 40vw;
+        position: absolute;
+        z-index: -1;
+        top: 4vw;
+
+        background: #F8F0F1;
+        box-shadow: 0px 1vw 1.25vw rgba(0, 0, 0, 0.25);
+        border-radius: 1.61vw;
+    }
+
+    .img-container {
+        width: 33vw;
+        height: 33vw;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../img/shop-item.png');
+
+        display: block;
+        margin: auto;
+        margin-bottom: 2vw;
+        margin-top: 0;
+    }
+
+    .margin-b {
+        margin-bottom: 1vw;
+    }
+
+    .cost {
+        text-align: left;
+        color: $color-red;
+        margin-top: 6vw;
+    }
+
+    @include mq($desktop-size) {   
+        .grid-container {
+            grid-row-gap: 10.93vw;
+            grid-column-gap: 2.18vw;
+    
+            grid-template-rows: 20vw 20vw;
+            grid-template-columns: 19.79vw 19.79vw 19.79vw;
+
+            margin-bottom: 4vw;
+        }
+
+        .item-wrapper {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            text-align: center;
+        }
+
+        .item-background {
+            width: 19.79vw;
+            height: 19.79vw;
+            position: absolute;
+            z-index: -1;
+
+            background: #F8F0F1;
+            box-shadow: 0px 0.46vw 0.57vw rgba(0, 0, 0, 0.25);
+            border-radius: 1.61vw;
+        }
+
+        .img-container {
+            width: 16.45vw;
+            height: 16.45vw;
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../img/shop-item.png');
+
+            display: block;
+            margin: auto;
+            margin-bottom: 1.5vw;
+            margin-top: 2vw;
+        }
+
+        .margin-b {
+            margin-bottom: 0.6vw;
+        }
+
+        .cost {
+            text-align: left;
+            color: $color-red;
+            margin-top: 2.5vw;
+        }
+    }
+}
+
+h6 {
+    position: relative;
+    margin: 2vw 0;
+    margin-bottom: 1.5vw !important;
+
+    @include mq($desktop-size) {
+        margin: 2vw;
+        margin-bottom: 1vw !important;
+    }
+}
+
+h6::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    width: 6vw;
+    height: 1px;
+        
+    left:calc(50% - 3vw);
+    top: 3.5vw;
+
+    @include mq($desktop-size) {
+        width: 2vw;
+        height: 2px;
+        
+        left:calc(50% - 1vw);
+        top: 1.6vw;
+    }
+}

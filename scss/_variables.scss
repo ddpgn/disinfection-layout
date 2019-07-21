@@ -1,0 +1,84 @@
+@import 'mq.scss';
+
+$color-red: #F70C5B;
+$desktop-size: 426;
+
+$small-text:        1.25rem;
+$ms-text:           1.6rem;
+$med-text:          2rem;
+$mb-text:           3rem;
+$big-text:          4rem;
+$ubig-text:         5.66rem;
+
+$small-text-mobile: 2rem;
+$ms-text-mobile:    2.2rem;   
+$med-text-mobile:   2.5rem;
+$mb-text-mobile:    3rem;
+$big-text-mobile:   4rem;
+$ubig-text-mobile:  5rem;
+
+.s-txt {
+    font-size: $small-text-mobile;
+    line-height: $small-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $small-text;
+        line-height: $small-text;
+    }
+}
+
+.ms-txt {
+    font-size: $ms-text-mobile;
+    line-height: $ms-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $ms-text;
+        line-height: $ms-text;
+    }
+}
+
+.m-txt {
+    font-size: $med-text-mobile;
+    line-height: $med-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $med-text;
+        line-height: $med-text;
+    }
+}
+
+.mb-txt {
+    font-size: $mb-text-mobile;
+    line-height: $mb-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $mb-text;
+        line-height: $mb-text;
+    }
+}
+
+.b-txt {
+    font-size: $big-text-mobile;
+    line-height: $big-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $big-text;
+        line-height: $big-text;
+    }
+}
+
+.ub-txt {
+    font-size: $ubig-text-mobile;
+    line-height: $ubig-text-mobile;
+    margin: 0px;
+
+    @include mq($desktop-size) {
+        font-size: $ubig-text;
+        line-height: $ubig-text;
+    }
+}

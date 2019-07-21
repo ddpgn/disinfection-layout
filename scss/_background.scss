@@ -1,0 +1,56 @@
+@import 'mq.scss';
+@import 'variables.scss';
+
+.bc-img-container {
+    background-repeat: no-repeat;
+    z-index: -10;
+    position: absolute;
+    background-size: contain;
+}
+
+.dudes-mobile {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../img/dudes-mobile.png');
+
+    @include mq($desktop-size) {
+        display: none;
+    }
+    //максимальная ширина = таблетка
+}
+
+.dudes-desktop {
+    display: none;
+    @include mq($desktop-size) {
+        width: 60.5vw;
+        height: 41.25vw;
+
+        display: block;
+        right: 0px;
+        background-image: url('../img/dudes-desktop.png');
+    }
+}
+
+.bottle {
+    z-index: -9;
+    transform: scale(-1, 1);
+
+    width: 92vw;
+    height: 61vw;
+
+    margin-top: 53vw;
+    right: 42.9vw;
+
+    background-image: url('../img/bottle.png');
+    
+    @include mq($desktop-size) {
+        transform: scale(1, 1);
+        width: 52.91vw;
+        height: 34.73vw;
+
+        right: 0px;
+
+        margin-top: 14.16vw;
+        margin-right: 5.4vw;
+    }
+}

@@ -1,0 +1,186 @@
+@import 'variables.scss';
+@import 'mq.scss';
+@import 'fonts.scss';
+@import 'background.scss';
+@import 'header.scss';
+@import 'page-1.scss';
+@import 'page-2.scss';
+@import 'page-3.scss';
+@import 'page-4.scss';
+@import 'page-5.scss';
+@import 'footer.scss';
+@import 'form.scss';
+
+html, body, main {
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 1.25vw;
+    font-family: RotondaC;
+
+    overflow: auto;
+    overflow-x: hidden;
+
+    @include mq($desktop-size) {
+        font-size: 0.625vw;
+    }
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.order-button {
+    margin: 0px;
+    width: 52.26vw;
+    height: 11.2vw;
+    font-size: $mb-text;
+    font-weight: bold;
+    font-family: RotondaC;
+    color: white;
+
+    background: linear-gradient(82.16deg, #E7336A 0.72%, #FF4E44 95.8%);
+    border-radius: 8px;
+    border: none;
+    
+    @include mq($desktop-size) {
+        width: 16vw;
+        height: 3.43vw;
+        font-size: $med-text;
+    }
+
+    filter: saturate(80%);
+    transition: box-shadow 0.2s, filter 0.2s;
+}
+
+.order-button:hover {
+    filter: saturate(100%);
+    box-shadow: 0px 0px 4px 1px $color-red; 
+}
+
+.order-button:active {
+    filter: saturate(50%);
+    transition: filter 0.05s;
+}
+
+.form-button {
+    @extend .order-button;
+}
+
+.form-button:hover {
+    @extend .order-button:hover;
+}
+
+.form-button:active {
+    @extend .order-button:active;
+}
+
+.f-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    @include mq($desktop-size) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    font-size: $big-text;
+    margin: 0px;
+}
+
+h3:before, h3:after {
+    position: absolute;
+    top:33%;
+    overflow: hidden;
+    width: 10%;
+    height: 2px;
+    content: '\a0';
+    background-color: #F70C5B;
+
+    @include mq($desktop-size) {
+        width: 5.72vw;
+        height: 4px;
+    }
+}
+h3:after {
+    margin-left: 7vw;
+    @include mq($desktop-size) {
+        margin-left: 2.29vw;
+    }
+}
+h3:before {
+    margin-left: -15vw;
+    text-align: right;
+    @include mq($desktop-size) {
+        margin-left: -8.1vw;
+    }
+}
+
+h4 {
+    text-align: center;
+    font-size: $med-text;
+    font-weight: 100;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    @include mq($desktop-size) {
+        margin-top: 0.75vw;
+        margin-bottom: 1.5vw;
+    }
+}
+
+.splitter {
+    margin: 5vw 0px;
+}
+
+.alt-logo {
+    display: block;
+    position: relative;
+
+    img {
+        width: 14vw;
+        margin: auto;
+    }
+
+    @include mq($desktop-size) {
+        img {
+            width: 7vw;
+        }
+    }
+}
+
+.alt-logo::after {
+    content: 'DEZ HELPER';
+    color: white;
+    font-size: $mb-text;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: 2vw;
+    display: block;
+
+    @include mq($desktop-size) {
+        margin-top: 1vw;
+    }
+}
+
+.noselect {
+    pointer-events: none;
+    user-select: none;
+}

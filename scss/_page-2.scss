@@ -1,0 +1,50 @@
+@import 'mq.scss';
+@import 'variables.scss';
+
+.page-2 {
+    margin-bottom: 18vw;
+
+    .grid-container {
+        grid-template-columns: 42.66vw 42.66vw;
+        grid-row-gap: 5.86vw;
+    }
+    
+    .img-wrapper {
+        width: 16.26vw;
+        height: 16.26vw;
+
+        border: 2px solid rgba(0,0,0,0.4);
+        border-radius: 50%;
+
+        margin-bottom: 3vw;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    p {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    @include mq($desktop-size) {
+        margin-bottom: 7vw;
+
+        .img-wrapper {
+            width: 6.35vw;
+            height: 6.35vw;
+            margin-bottom: 2vw;
+        }
+
+        p {
+            max-width: 80%;
+        }
+        
+        .grid-container {
+            grid-template-columns: 16.56vw 16.56vw 16.56vw;
+            grid-row-gap: 2vw;
+            grid-column-gap: 4vw;
+        }
+    }
+}

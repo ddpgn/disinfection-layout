@@ -1,0 +1,125 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mq.scss';
+
+$brd: 1px solid rgba(0,0,0,0.3);
+
+.page-4 {
+    margin-bottom: 7.91vw;
+}
+
+.table-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    width: 90vw;
+
+    @include mq($desktop-size) {
+        width: 62.86vw;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5.31vw;
+}
+
+.table-button {
+    flex-grow: 1;
+    margin: 0px;
+    height: 6vw;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-left: $brd;
+    border-bottom: $brd;
+
+    font-weight: bold;
+    font-family: RotondaC;
+    transition: border-bottom 0.2s;
+
+    @include mq($desktop-size) {
+        height: 2.76vw;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+    }
+}
+
+.table-button:hover {
+    border-bottom: 2px solid $color-red;
+
+    @include mq($desktop-size) {
+        border-bottom: 0.41vw solid $color-red;
+    }
+}
+
+.table-button.active {
+    @extend .table-button:hover;
+}
+
+.table-button:first-child {
+    border-left: none;
+}
+
+.table-container {
+    width: 100%;
+    border-radius: 1.82vw;
+    background: linear-gradient(-82.16deg, #E7336A 0.72%, #FF4E44 95.8%);
+    height: 60.20vw;
+
+    @include mq($desktop-size) {
+        height: 45.20vw;
+    }
+}
+
+.cost-table {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    margin: auto;
+    margin-top: 2px;
+    background-color: rgb(255,236,236);
+    text-align: center;
+    
+    border-radius: 1.52vw;
+    border-spacing: 0px;
+    color: rgb(64,64,64);
+
+    @include mq($desktop-size) {
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        margin-top: 5px;
+    }
+}
+
+tr:nth-child(2n) {
+    background-color: white;
+}
+
+tr::after {
+    content: '';
+    width: 1px;
+    height: 3.28vw;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    transform: translate(-27.5vw, 1.51vw);
+}
+
+.txt-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3vw;
+
+    p {
+        margin: 0px;
+        margin-bottom: 1.8vw;
+    }
+
+    @include mq($desktop-size) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 2.8vw;
+    }
+}

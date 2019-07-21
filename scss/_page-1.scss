@@ -1,0 +1,29 @@
+@import 'mq.scss';
+@import 'variables.scss';
+
+
+.page-1 {
+    margin-top: 12vw;
+    margin-right: 4vw;
+    margin-bottom: 40vw;
+    text-align: right;
+
+    .margin-b {
+        margin-bottom: 4vw;
+    }
+
+    .order-button {
+        margin-top: 4vw;
+    }
+
+    @include mq($desktop-size) {
+        margin-top: 16.82vw;
+        margin-left: 20.20vw;
+        margin-bottom: 14vw;
+        text-align: left;
+
+        .margin-b {
+            margin-bottom: 1vw;
+        }
+    }
+}

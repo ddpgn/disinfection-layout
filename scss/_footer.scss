@@ -1,0 +1,122 @@
+@import 'variables.scss';
+@import 'mq.scss';
+@import 'background.scss';
+
+footer {
+    width: 100%;
+    position: absolute;
+    margin-top: 12vw;
+    padding-bottom: 3vw;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include mq($desktop-size) {
+        margin-top: 13.9vw;
+    }
+
+    .alt-logo {
+        margin-left: 3vw;
+    }
+}
+
+.vk-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 6.5vw;
+
+    img {
+        width: 12vw;
+    }
+
+    p {
+        display: none;
+    }
+
+    @include mq($desktop-size) {
+        margin-left: 18.59vw;
+
+        img {
+            width: 5.1vw;
+        }
+    
+        p {
+            display: inline;
+            font-size: 1.25vw;
+            font-weight: bold;
+            color: $color-red;
+            line-height: 1.45vw;
+            margin-left: 1.45vw;
+        }
+    }
+}
+
+.footer-desk {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 14vw;
+    color: white;
+    text-align: right;
+    letter-spacing: 0.06em;
+    height: fit-content;
+       
+    @include mq($desktop-size) {
+        margin-left: 14vw;
+        letter-spacing: 0.11em;
+        
+        .margin-b {
+            margin-bottom: 1vw;
+        }
+    }
+}
+
+.desk-wrapper {
+    border-right: 1px solid $color-red;
+    padding-right: 2.5vw;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include mq($desktop-size) {
+        border-right: 3px solid $color-red;
+    }
+}
+
+footer::before {
+    @extend .bc-img-container;
+
+    background-image: url('../img/bug-footer.svg');
+    width: 50vw;
+    height: 50vw;
+    content: '';
+    
+    left: 0px;
+    bottom: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer::after {
+    @extend .bc-img-container;
+
+    background-image: url('../img/dudes-footer.png');
+    width: 84vw;
+    height: 56.9vw;
+    content: '';
+
+    right: 0px;
+    bottom: 0;
+
+    margin: 0;
+    padding: 0;
+
+    @include mq($desktop-size) {
+        width: 60vw;
+        height: 40.66vw;
+    }
+}

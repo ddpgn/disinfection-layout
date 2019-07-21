@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!--Всплывающая форма-->
+    <div class='form' id='form'>
+        <div class='form-window' id='form-window'>
+            <div class="window-container">
+                <button id='cross'>
+                    <img src="./img/cross.svg" draggable="false" class='noselect' alt="">
+                </button>
+                <h2 class='b-txt margin-b'>Обратная свзязь</h2>
+                <p class='m-txt'>Напишите нам о том какая обработка или товар вас заинтересовали, либо ваш вопрос и мы свяжемся с вами в ближайшее время</p>
+                <input class='form-input ms-txt' placeholder='Ваше имя' type="text">
+                <input class='form-input ms-txt' placeholder='Ваш e-mail' type="text">
+                <input class='form-input ms-txt' placeholder='Ваш контактный телефон' type="text">
+                <textarea name="" id="" cols="30" rows="10" class='form-textarea ms-txt' placeholder="Текст сообщения..."></textarea>
+                <div class='form-footer'>
+                    <button class='form-button'>Отправить</button>
+                    <p class='mb-txt'>8 952 <b>374-35-08</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Основная страница-->
+    <main id='main'>
+
+        <!--Фоновые изображения сверху страницы-->
+        <div class='bc-img-container dudes-desktop'></div> 
+        <div class='bc-img-container dudes-mobile'></div>
+        <div class='bc-img-container bottle'></div> 
+        
+        <!--Шапка-->
+        <header>
+            <div class='logo-wrapper'>
+                <div class='alt-logo mobile'>
+                    <img class='alt-logo' src="./img/logo/logo-mobile.svg" alt="">  
+                </div>
+                <img class='desktop' src="./img/logo/logo-desktop.svg" alt="">
+            </div>
+            <div class='contacts-wrapper'>
+                <div class='contacts-txt border-right m-txt'><b>Санкт-Петербург</b><br>и Ленинградская область</div>
+                <div class='contacts-txt mb-txt' style='line-height: 4rem;'>8 952 <b>374-35-08</b></div>
+            </div>
+        </header>
+
+        <!--Заглавная страница-->
+        <section class='page-1'>
+            <div class='b-txt margin-b'><b>Лучшая помощь</b></div>
+            <div class='ub-txt margin-b'><b>В БОРЬБЕ С ВРЕДИТЕЛЯМИ</b></div>
+            <div class='m-txt margin-b'>Наша компания предоставляет услуги по борьбе с<br>вредителями всех категорий</div>
+            <button class='order-button'>Заказать обработку</button>
+        </section>
+
+        <!--Сетка преимуществ-->
+        <section class='page-2 f-center'>
+            <div class='grid-container'>
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/muscle.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/time.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/security.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/value.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/leaf.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='img-wrapper f-center'>
+                        <img src="./img/page_1_grid/bug.svg" alt="">
+                    </div>
+                    <p class='m-txt'><b>Лучшая помощь</b><p>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class='splitter'>
+            <h3>ВИДЫ ОБРАБОТОК</h3>
+            <h4>Которые мы делаем</h4>
+        </div>
+
+        <!--Карточки описания выполняемых работ-->
+        <section class='page-3'>
+            <div class='cardholder'>
+                <div class='card'>
+                    <h5 class='m-txt'>Дезинсеция</h5>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem 
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur</p>
+                    <button class='order-button'>Заказать обработку</button>
+                </div>
+                <div class='card'>
+                    <h5 class='m-txt'>Дератизация</h5>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem 
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur</p>
+                    <button class='order-button'>Заказать обработку</button>
+                </div>
+                <div class='card'>
+                    <h5 class='m-txt'>Акарицидная обработка</h5>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem 
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur</p>
+                    <button class='order-button'>Заказать обработку</button>
+                </div>
+                <div class='card'>
+                    <h5 class='m-txt'>Дезинфекция</h5>
+                    <p class='s-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem 
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur</p>
+                    <button class='order-button'>Заказать обработку</button>
+                </div>
+                <div>&ensp;</div>
+            </div>
+        </section>
+        
+        
+        <div class='splitter'>
+            <h3>ЦЕНЫ НА УСЛУГИ</h3>
+            <h4>Которые мы делаем</h4>
+        </div>
+        
+        <!--Таблица цен на обработку-->
+        <section class='page-4'>
+            <div class='table-wrapper'>
+                <div class='button-wrapper'>
+                    <button class='table-button m-txt active' id='tb-bt-1'>Тараканы</button>
+                    <button class='table-button m-txt' id='tb-bt-2'>Клопы</button>
+                    <button class='table-button m-txt' id='tb-bt-3'>Клещи</button>
+                    <button class='table-button m-txt' id='tb-bt-4'>Грызуны</button>
+                </div>
+                <div class='table-container'>
+                    <table class='cost-table' id='tb-1'>
+                        <tr class='m-txt'>
+                            <td>&lt;50 м2</td>
+                            <td>1300 р.</td>
+                        </tr>
+                        <tr class='m-txt'>
+                            <td>50-100 м2</td>
+                            <td>2000 р.</td>
+                        </tr class='m-txt'>
+                        <tr class='m-txt'>
+                            <td>100-200 м2</td>
+                            <td>2700 р.</td>
+                        </tr>
+                        <tr class='m-txt'>
+                            <td>200-300 м2</td>
+                            <td>3500 р.</td>
+                        </tr>
+                        <tr class='m-txt'>
+                            <td>500+ м2</td>
+                            <td>4000 р.</td>
+                        </tr>
+                        <tr class='m-txt'>
+                            <td>Цена за сотку</td>
+                            <td>5000 р.</td>
+                        </tr>
+                        <tr class='m-txt'>
+                            <td>Цена за Га</td>
+                            <td>8000 р.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='txt-wrapper'>
+                    <p class='m-txt'>Коммерческие предложения или индивидуальный<br>план для обработок можно уточнить по почте или<br>связавшись с нами по телефону.</p>
+                    <button class='order-button'>Заказать обработку</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class='splitter'>
+            <h3>ЦЕНЫ НА ПРЕПАРАТЫ</h3>
+            <h4>Для собственной обработки</h4>
+        </div>
+
+        <!--Сетка используемых препаратов-->
+        <section class='page-5'>
+            <div class='grid-container f-center'>
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+
+                <div class='grid-cell'>
+                    <div class='item-wrapper'>
+                        <div class='item-background'></div>
+                        <div class="img-container"></div>
+                        <h6 class='m-txt'>Ципермитрин</h6>
+                        <p class='s-txt'>Дезинсектоид</p>
+                        <p class='cost ub-txt'><b>500 р.</b></p>
+                    </div>
+                </div>
+               
+                <div></div>
+            </div>
+            <button class='order-button'>Купить</button>
+        </section>
+        
+        <!--Подвал-->
+        <footer>  
+            <div class='vk-logo'>
+                <a href=""><img src="./img/logo/vk-logo.svg" alt=""></a>
+                <p>Присоединяйтесь и<br>оставляйте отзывы</p> 
+            </div>
+            <div class='footer-desk'>
+                <div class="desk-wrapper">
+                    <div class='m-txt'>
+                        <b>Санкт-Петербург</b> и<br>Ленинградская область
+                    </div>
+                    <div class='m-txt'>
+                        <b>dezhelper</b>@gmail.com
+                    </div>
+                    <div class='mb-txt'>
+                        8 952 <b>374-35-08</b>
+                    </div>
+                </div>
+                <div class='alt-logo'>
+                    <img class='alt-logo' src="./img/logo/logo-mobile.svg" alt="">  
+                </div>
+                
+            </div>
+        </footer>
+
+        <!--Фоновые изображения снизу страницы-->
+       
+    </main>
+    <script src='./js/main.js'></script>
+</body>
+</html>

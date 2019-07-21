@@ -1,0 +1,97 @@
+@import 'mq.scss';
+@import 'variables.scss';
+
+.cardholder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6vw;
+
+    @include mq($desktop-size) {
+        padding-bottom: 1vw;
+        justify-content: center;
+    }
+}
+
+.card {
+    width: 52.26vw;
+    text-align: center;
+    position: relative;
+    padding: 5vw;
+    border-radius: 5vw;
+    box-shadow: 0px 9px 11px rgba(0, 0, 0, 0.25);
+
+    margin: 0 5vw;
+    margin-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    p {
+        padding: 2vw 3vw;
+        line-height: 133%;
+    }
+
+    .order-button {
+        margin-top: auto;
+    }
+    
+    @include mq($desktop-size) {
+        width: 16vw;
+        height: 29.65vw;
+
+        padding: 1.61vw;
+        margin: 0 3.17vw;
+        margin-right: 0px;
+
+        border-radius: 1.61vw;
+
+        p {
+            padding: 0.5vw 1vw;
+            line-height: 125%;
+        }
+
+        .order-button {
+            margin-top: auto;
+        }
+    }
+}
+
+.card:nth-last-child(2) {
+    margin-right: 4vw;
+    @include mq($desktop-size) {
+        margin-right: 3.17vw;
+    }
+}
+
+h5 {
+    position: relative;
+    margin: 2vw 0;
+    margin-bottom: 2vw !important;
+
+    @include mq($desktop-size) {
+        margin: 2vw;
+        margin-bottom: 1vw !important;
+    }
+}
+
+h5::after {
+    content: '';
+    position: absolute;
+    background-color: $color-red;
+    
+    width: 12vw;
+    height: 1px;
+        
+    left:calc(50% - 6vw);
+    top: 4vw;
+
+    @include mq($desktop-size) {
+        width: 4vw;
+        height: 2px;
+        
+        left:calc(50% - 2vw);
+        top: 1.6vw;
+    }
+}
